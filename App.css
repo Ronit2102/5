@@ -15,7 +15,9 @@ body {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
-h2, h3 { text-align: center; }
+h2, h3 {
+  text-align: center;
+}
 
 label {
   display: block;
@@ -33,7 +35,9 @@ input, select {
   transition: 0.3s;
 }
 
-input:focus, select:focus { border-color: #28a745; }
+input:focus, select:focus {
+  border-color: #28a745;
+}
 
 .buttons {
   display: flex;
@@ -55,17 +59,36 @@ button[type="submit"] {
   color: white;
 }
 
-button[type="submit"]:hover { background: #218838; }
+button[type="submit"]:hover {
+  background: #218838;
+}
 
-#clearBtn {
+button[type="button"] {
   background: #dc3545;
   color: white;
 }
 
-#clearBtn:hover { background: #c82333; }
+button[type="button"]:hover {
+  background: #c82333;
+}
 
-.message, .user-list { margin-top: 20px; }
-.message { font-weight: bold; text-align: center; }
+.message {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.message.success {
+  color: green;
+}
+
+.message.error {
+  color: red;
+}
+
+.user-list {
+  margin-top: 20px;
+}
 
 ul {
   list-style: none;
